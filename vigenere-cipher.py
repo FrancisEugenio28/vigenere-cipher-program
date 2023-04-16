@@ -25,6 +25,10 @@ def vigenere_cipher(message,key):
         cipher_text += chr(cipher_code)
 
     return cipher_text
+# Add a loading effect
+import time
+print("Decoding...".center(150))
+time.sleep(3)
 # print the empty set or the output
 cipher_text = vigenere_cipher(message,key)
 print(cipher_text)
