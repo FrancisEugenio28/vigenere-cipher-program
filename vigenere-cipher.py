@@ -22,7 +22,9 @@ def vigenere_cipher(message,key):
         cipher_code = (message_code + key_code) % 26
 # Gather the Cipher text with the ASCII code then return it to the empty set 
         cipher_code += 65
-        cipher_code += chr(cipher_code)
+        cipher_text += chr(cipher_code)
 
     return cipher_text
 # print the empty set or the output
+cipher_text = vigenere_cipher(message,key)
+print(cipher_text)
