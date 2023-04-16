@@ -10,6 +10,7 @@ def vigenere_cipher(message,key):
     key_index = key * (len(message)// len(key) + 1)
     key_index = key_index[:len(message)]
 # Create an empty set wherein we will put the output into it
+    cipher_text = ''
 # We will scan the characters in the message using a for loop 
 # Gather the ASCII code both message and the key
 # Perform the formulation of Vigenere Cipher Algorithm
