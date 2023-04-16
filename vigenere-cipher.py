@@ -16,6 +16,8 @@ def vigenere_cipher(message,key):
         message_code = ord(message[i])
         key_code = ord(key_index[i])
 # Gather the ASCII code both message and the key
+        message_code -= 65
+        key_code -= 65
 # Perform the formulation of Vigenere Cipher Algorithm
 # Gather the Cipher text with the ASCII code then return it to the empty set 
 # print the empty set or the output
