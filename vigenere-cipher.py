@@ -3,6 +3,8 @@
 #Program 3
 
 # Create an input function for message and for the key
+message = input("Please enter your Message: ")
+key = input("Please enter your key: ")
 # Repeat the length of the key base on the length of the Message
 # Create an empty set wherein we will put the output into it
 # We will scan the characters in the message using a for loop 
