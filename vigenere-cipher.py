@@ -2,9 +2,14 @@
 #BSCPE 1-5 | Object Oriented Programing
 #Program 3
 
+import colorama
+import pyfiglet
+
+colorama.init()
+
 # Create an input function for message and for the key
-message = input("Please enter your Message: ")
-key = input("Please enter your key: ")
+message = input(colorama.Fore.LIGHTMAGENTA_EX + "Please enter your Message: ")
+key = input(colorama.Fore.LIGHTMAGENTA_EX + "Please enter your key: ")
 # Repeat the length of the key base on the length of the Message
 def vigenere_cipher(message,key):
     key_index = key * (len(message)// len(key) + 1)
@@ -27,8 +32,8 @@ def vigenere_cipher(message,key):
     return cipher_text
 # Add a loading effect
 import time
-print("Decoding...".center(150))
+print(colorama.Back.LIGHTYELLOW_EX + "Decoding...".center(150))
 time.sleep(3)
 # print the empty set or the output
 cipher_text = vigenere_cipher(message,key)
-print(cipher_text)
+print(pyfiglet.figlet_format(cipher_text, font = "bubble" ))
